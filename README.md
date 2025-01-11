@@ -135,14 +135,3 @@ The project follows an incremental development structure with week-by-week miles
 - [GitHub Repository](https://github.com/adrianhajdin/project_modern_ui_ux_restaurant.git)
 - [YouTube Walkthrough](https://www.youtube.com/watch?v=4oV65GVVits)
 
----
-
-## Contributors
-- [@adrianhajdin](https://github.com/adrianhajdin) Adrian Hajdin - JS Mastery
-- [@TidbitsJS](https://github.com/TidbitsJS) Sujata Gunale
-- [@ankitgtron](https://github.com/ankitgtron) Ankit Gaur
-
----
-
-## License
-This project is licensed under the MIT License.
