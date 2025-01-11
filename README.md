@@ -123,17 +123,6 @@ The project follows an incremental development structure with week-by-week miles
 
 ---
 
-## Screenshots
-- Screenshot (188)
-- Screenshot (189)
-- Screenshot (190)
-- Screenshot (191)
-- Screenshot (192)
-- Screenshot (193)
-- Screenshot (187)
-
----
-
 ## References
 - [React Documentation](https://reactjs.org/docs/)
 - [CSS Tricks](https://css-tricks.com/)
