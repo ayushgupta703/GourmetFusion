@@ -14,19 +14,57 @@
     width: 50%;
     color: white;
     margin: 7rem 2rem 5rem 4rem;
-    font-family: "Yatra One", serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
 }
 
 .info h1 {
     font-size: 3rem;
     color: rgb(255, 207, 188);
-    padding-top: 3rem;
-    padding-bottom: 2rem;
-    padding-left: 1rem;
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
+}
+
+.info button {
+    margin-top: 1rem;
+    padding: 9px 1rem;
+    background-color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+
+.info button a {
+    text-decoration: none;
+    color: black;
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
 }
 
 .info_img {
     padding: 2rem;
+}
+
+.info_img img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10%;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.626);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .info_Parent {
+        display: block;
+        padding: 0;
+    }
+
+    .info {
+        margin: 2rem;
+    }
+
+    .info_img img {
+        height: 100%;
+        width: 100%;
+    }
 }
