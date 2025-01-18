@@ -7,26 +7,21 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
+    background-color: rgba(0, 0, 0, 0.859);
 }
 
 .navbar {
-    /* display: flex; */
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    background-color: #4A4E69;
-    color: white;
     position: relative;
     z-index: 10;
     transition: background-color 0.3s ease;
 }
 
-.navbar:hover {
-    background-color: #22223b;
-}
-
 .navbar-brand a {
-    color: #f9f7f3;
+    color: #ffffff;
     text-decoration: none;
     font-size: 28px;
     font-weight: bold;
@@ -41,7 +36,7 @@ body {
 }
 
 .navbar-links a {
-    color: #f9f7f3;
+    color: #ffffff;
     text-decoration: none;
     padding: 10px 15px;
     border-radius: 5px;
@@ -49,7 +44,7 @@ body {
 }
 
 .navbar-links a:hover {
-    border: 1px solid #f9f7f3;
+    border: 1px solid #ffffff;
 }
 
 .navbar-toggle {
@@ -61,25 +56,27 @@ body {
 .bar {
     height: 4px;
     width: 30px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     margin: 3px 0;
 }
 
-.navbar_log{
-    
+.navbar_log {
+
     justify-content: flex-end;
     align-items: center;
 }
-.navbar_log a{
-    margin:0 1rem;
+
+.navbar_log a {
+    margin: 0 1rem;
     text-decoration: none;
     transition: 0.5s ease;
 }
-.navbar_log a:hover{
+
+.navbar_log a:hover {
     border-bottom: 1px solid var(--color-golden);
 }
 
-.navbar_log div{
+.navbar_log div {
     width: 1px;
     height: 30px;
     background-color: var(--color-grey);
@@ -87,21 +84,25 @@ body {
 
 /* Responsive styles */
 @media (max-width: 768px) {
-    /* .navbar-brand {
-        margin-left: -40%;
-    } */
-
     .navbar-links {
         display: none;
         flex-direction: column;
         position: absolute;
         top: 60px;
         right: 20px;
-        background-color: #4A4E69;
+        background-color: #ffffff66;
         padding: 10px;
         border-radius: 5px;
         width: 200px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar-links a {
+        color: rgb(0, 0, 0);
+    }
+
+    .navbar-links a:hover {
+        border: 1px solid #000000;
     }
 
     .navbar-links.active {
@@ -110,7 +111,5 @@ body {
 
     .navbar-toggle {
         display: flex;
-        /* margin-left: 90%;
-        margin-top: -10.5%; */
     }
 }

@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.info_Parent {
+    display: flex;
+    padding: 5rem 0;
+}
+
+.info {
+    font-size: 1.5rem;
+    width: 50%;
+    color: white;
+    margin: 7rem 2rem 5rem 4rem;
+    font-family: "Yatra One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.info h1 {
+    font-size: 3rem;
+    color: rgb(255, 207, 188);
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+}
+
+.info_img {
+    padding: 2rem;
+}
