@@ -26,19 +26,25 @@
 }
 
 .info button {
-    margin-top: 1rem;
-    padding: 9px 1rem;
+    display: inline-block;
+    padding: 10px 20px;
     background-color: white;
-    cursor: pointer;
+    color:black;
+    font-style: italic;
+    font-family: "Cormorant Garamond", serif;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
 .info button a {
     text-decoration: none;
-    color: black;
-    font-family: "Cormorant Garamond", serif;
-    font-style: italic;
+    color: inherit;
+}
+.info button:hover {
+    background-color: #f0ad4e; 
+    color: #ffffff;
 }
 
 .info_img {
@@ -48,7 +54,7 @@
 .info_img img {
     height: 100%;
     width: 100%;
-    border-radius: 10%;
+    border-radius: 15px;
     box-shadow: 0 4px 10px rgba(255, 255, 255, 0.626);
 }
 
