@@ -35,7 +35,7 @@ body {
     gap: 30px;
 }
 
-.navbar-links a {
+/* .navbar-links a {
     color: #ffffff;
     text-decoration: none;
     padding: 10px 15px;
@@ -45,6 +45,29 @@ body {
 
 .navbar-links a:hover {
     border: 1px solid #ffffff;
+} */
+
+.navbar-links a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    /* font-size: 20px; */
+    position: relative;
+}
+
+.navbar-links a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid rgb(255, 207, 188);
+    transition: 0.15s linear;
+}
+
+.navbar-links a:hover::before {
+    width: 100%;
 }
 
 .navbar-toggle {
@@ -90,7 +113,7 @@ body {
         position: absolute;
         top: 60px;
         right: 20px;
-        background-color: #ffffff66;
+        background-color: #5b5b5be2;
         padding: 10px;
         border-radius: 5px;
         width: 200px;
@@ -98,11 +121,7 @@ body {
     }
 
     .navbar-links a {
-        color: rgb(0, 0, 0);
-    }
-
-    .navbar-links a:hover {
-        border: 1px solid #000000;
+        color: rgb(255, 255, 255);
     }
 
     .navbar-links.active {
