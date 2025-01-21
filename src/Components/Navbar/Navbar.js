@@ -13,7 +13,7 @@ const Navbar = () => {
         <>
             <nav className="navbar">
                 <div className="navbar-brand">
-                    <a href="/">GourmetFusion</a>
+                    <Link to="/">GourmetFusion</Link>
                 </div>
                 <ul className={`navbar-links ${isOpen ? 'active' : ''}`}>
                     <li><Link to="/about">About Us</Link></li>
