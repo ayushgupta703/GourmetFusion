@@ -29,8 +29,18 @@
     text-decoration: underline;
 }
 
+.aboutus_info h2,
+.history_info h2,
+.history_info h3,
+.aboutus_info h3 {
+    margin-bottom: 1rem;
+    text-decoration: underline;
+}
+
 .aboutus_p1,
-.history_p1 {
+.history_p1,
+.history_p2,
+.aboutus_ul {
     font-size: 1.1rem;
     line-height: 1.8;
     margin-bottom: 1.5rem;
