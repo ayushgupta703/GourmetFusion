@@ -11,6 +11,7 @@
 
 .chef-word-container {
     max-width: 1200px;
+    margin-top: 10%;
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
