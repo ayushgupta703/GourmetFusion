@@ -66,3 +66,14 @@ button:hover {
     background: white;
     transform: scale(1.2);
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .carousel-container {
+        height: 220px;
+    }
+
+    .carousel-image {
+        height: 200px;
+    }
+}

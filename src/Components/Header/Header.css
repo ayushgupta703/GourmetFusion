@@ -78,7 +78,8 @@
     }
 
     .info button {
-        margin-top: 25px;
+        position: relative;
+        margin-top: 50px;
     }
 
     .info_img img {

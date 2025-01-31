@@ -75,3 +75,10 @@
     font-weight: bold;
     color: #fff;
 }
+
+/* Responsive Design */
+@media(max-width: 768px) {
+    .menu-filters button {
+        font-size: 12.7px;
+    }
+}
