@@ -5,6 +5,7 @@ import AboutUs from './Components/AboutUs/AboutUs';
 import Menu from './Components/Menu/Menu';
 import ChefWord from './Components/ChefWord/ChefWord';
 import Gallery from './Components/Gallery/Gallery';
+import ContactUs from './Components/ContactUs/ContactUs';
 import {
   BrowserRouter as Router,
   Routes,
@@ -23,8 +24,8 @@ const App = () => {
           <Route path="/menu" element={<Menu />} />
           <Route path="/chef-word" element={<ChefWord />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/contact" element={<ContactUs />} />
         </Routes>
-        {/* <Gallery /> */}
       </div>
     </Router>
   );

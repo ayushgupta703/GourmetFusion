@@ -1,79 +1,40 @@
-.carousel-container {
+/* Prevent styles from affecting other components */
+.gallery-carousel,
+.gallery-carousel * {
+    all: unset;
+    display: inherit;
+}
+
+/* Main carousel container */
+.gallery-carousel {
     position: relative;
-    width: 80%;
-    max-width: 600px;
-    height: 425px;
-    margin: auto;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-.carousel-image {
+    top: 6rem;
     width: 100%;
-    height: 400px;
-    object-fit: cover;
-    transition: opacity 0.5s ease-in-out;
-    border-radius: 10px;
-}
-
-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    font-size: 24px;
-    transition: 0.3s;
-    border-radius: 50%;
-}
-
-button:hover {
-    background: rgba(0, 0, 0, 0.8);
-}
-
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
-}
-
-/* Dots Navigation */
-.dots {
-    position: absolute;
-    /* bottom: 15px; */
-    left: 50%;
-    transform: translateX(-50%);
+    max-width: 900px;
+    height: 450px;
     display: flex;
-    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
 }
 
-.dot {
-    width: 12px;
-    height: 12px;
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background 0.3s ease;
+/* Wrapper to hold slides */
+.gallery-carousel-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-.dot.active {
-    background: white;
-    transform: scale(1.2);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .carousel-container {
-        height: 220px;
-    }
-
-    .carousel-image {
-        height: 200px;
-    }
+/* Individual slides */
+.gallery-carousel-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }

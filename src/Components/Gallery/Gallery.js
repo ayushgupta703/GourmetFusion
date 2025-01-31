@@ -12,41 +12,41 @@ const images = [
 ];
 
 const Gallery = () => {
-    const [currentIndex, setCurrentIndex] = useState(0);
+    const [currentIndex, setCurrentIndex] = useState(2); // Centered slide
 
+    // Next slide function
     const nextSlide = () => {
-        setCurrentIndex((prevIndex) =>
-            prevIndex === images.length - 1 ? 0 : prevIndex + 1
-        );
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
     };
 
-    const prevSlide = () => {
-        setCurrentIndex((prevIndex) =>
-            prevIndex === 0 ? images.length - 1 : prevIndex - 1
-        );
-    };
 
     useEffect(() => {
-        const interval = setInterval(nextSlide, 3000); // Auto-slide every 3 seconds
-        return () => clearInterval(interval); // Cleanup function to stop interval when unmounted
+        const interval = setInterval(nextSlide, 2000);
+        return () => clearInterval(interval);
     }, []);
 
     return (
-        <div className="carousel-container">
-            <button className="prev" onClick={prevSlide}>❮</button>
+        <div className="gallery-carousel">
+            <div className="gallery-carousel-wrapper">
+                {images.map((image, index) => {
+                    let diff = index - currentIndex;
+                    let scale = 1 - Math.abs(diff) * 0.1;
+                    let opacity = 1 - Math.abs(diff) * 0.3;
+                    let translateX = diff * 25;
 
-            <img src={images[currentIndex]} alt="Dish" className="carousel-image" />
-
-            <button className="next" onClick={nextSlide}>❯</button>
-
-            <div className="dots">
-                {images.map((_, index) => (
-                    <span
-                        key={index}
-                        className={index === currentIndex ? "dot active" : "dot"}
-                        onClick={() => setCurrentIndex(index)}
-                    ></span>
-                ))}
+                    return (
+                        <div
+                            key={index}
+                            className={`gallery-carousel-slide ${index === currentIndex ? "active" : ""}`}
+                            style={{
+                                backgroundImage: `url(${image})`,
+                                transform: `translateX(${translateX}%) scale(${scale})`,
+                                opacity: opacity,
+                                zIndex: -Math.abs(diff) + 5,
+                            }}
+                        ></div>
+                    );
+                })}
             </div>
         </div>
     );
