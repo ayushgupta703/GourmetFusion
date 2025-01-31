@@ -4,6 +4,7 @@ import Header from './Components/Header/Header';
 import AboutUs from './Components/AboutUs/AboutUs';
 import Menu from './Components/Menu/Menu';
 import ChefWord from './Components/ChefWord/ChefWord';
+import Gallery from './Components/Gallery/Gallery';
 import {
   BrowserRouter as Router,
   Routes,
@@ -21,8 +22,9 @@ const App = () => {
           <Route path="/about" element={<AboutUs />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/chef-word" element={<ChefWord />} />
+          <Route path="/gallery" element={<Gallery />} />
         </Routes>
-
+        {/* <Gallery /> */}
       </div>
     </Router>
   );

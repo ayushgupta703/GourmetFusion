@@ -19,11 +19,13 @@
 }
 
 .menu-filters button {
+    position: inherit;
     margin: 5px;
     padding: 10px 15px;
     border: none;
     background-color: #333;
     color: #fff;
+    font-size: medium;
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s ease;
