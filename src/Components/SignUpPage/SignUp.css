@@ -1,0 +1,26 @@
+/* Center the whole sign-up container on the page */
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: rgba(0, 0, 0, 0.8); /* Adjust based on your theme */
+}
+
+/* Style for the box containing the form */
+.signup-box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Limit the max width of the sign-up box */
+}
+
+/* Style the heading above the form (aligned at the top) */
+.signup-box h2 {
+    text-align: center; /* Center-align the heading */
+    font-size: 24px;
+    color: #333; /* Dark text color */
+    margin-bottom: 20px; /* Space between heading and form */
+}

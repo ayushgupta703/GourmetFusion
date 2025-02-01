@@ -1,0 +1,54 @@
+/* Login Page Styling */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+}
+
+h2 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.clerk-sign-in {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 207, 188, 0.3);
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+/* Clerk default form adjustments */
+.cl-signIn-root {
+    border-radius: 10px !important;
+    padding: 20px !important;
+}
+
+/* Clerk buttons */
+.clerk-sign-in button {
+    background: rgb(255, 207, 188) !important;
+    color: black !important;
+    border-radius: 5px !important;
+    padding: 10px !important;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.clerk-sign-in button:hover {
+    background: rgba(255, 207, 188, 0.8) !important;
+}
+
+/* Adjust Clerk links */
+.clerk-sign-in a {
+    color: rgb(255, 207, 188) !important;
+    text-decoration: none;
+}
+
+.clerk-sign-in a:hover {
+    text-decoration: underline;
+}
