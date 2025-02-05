@@ -1,6 +1,5 @@
-/* Ensure styles are specific to Contact Us page */
 .contact-us-container {
-    max-width: 600px;
+    max-width: 90%;
     margin: 50px auto;
     padding: 20px;
     background: #5b5b5be2;
@@ -17,6 +16,33 @@
 
 .contact-us-container p {
     color: white;
+}
+
+.contact-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-us-left {
+    margin-right: 20%;
+    text-align: left;
+}
+
+.contact-us-left h2 {
+    text-decoration: underline;
+    font-size: large;
+    color: rgb(255, 207, 188);
+}
+
+.icon {
+    color: white;
+    margin-right: 20px;
+    font-size: 1.5rem;
+}
+
+.icon:hover {
+    color: rgb(255, 207, 188);
 }
 
 /* Form container */
@@ -38,7 +64,7 @@
 /* Input fields */
 .contact-us-form input,
 .contact-us-form textarea {
-    width: 100%;
+    width: 150%;
     padding: 10px;
     font-size: 1rem;
     border: 1px solid #ccc;
@@ -58,6 +84,8 @@
 .contact-us-form button {
     background-color: #ffffff;
     color: rgb(0, 0, 0);
+    margin-top: 10px;
+    margin-left: 24%;
     width: 100%;
     padding: 12px;
     font-size: 1rem;
