@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { ClerkProvider, RedirectToSignIn, SignedIn, SignedOut } from '@clerk/clerk-react';
+import { ClerkProvider } from '@clerk/clerk-react';
 import Navbar from './Components/Navbar/Navbar';
 import Header from './Components/Header/Header';
 import AboutUs from './Components/AboutUs/AboutUs';
