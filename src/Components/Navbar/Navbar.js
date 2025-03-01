@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
 import { SignedIn, SignedOut, useClerk } from '@clerk/clerk-react';
 
 const Navbar = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
+
     const { signOut } = useClerk();
 
     // Handle sign-out functionality without window reload
@@ -34,6 +40,11 @@ const Navbar = () => {
                     <li><Link to="/sign-up">Sign Up</Link></li>
                 </SignedOut>
             </ul>
+            <div className="navbar-toggle" onClick={toggleMenu}>
+                <span className="bar"></span>
+                <span className="bar"></span>
+                <span className="bar"></span>
+            </div>
         </nav>
     );
 };
