@@ -10,7 +10,7 @@ const Login = () => {
     // Redirect user after successful sign-in
     useEffect(() => {
         if (isSignedIn) {
-            navigate('/menu');  // Redirect to '/menu' when the user is signed in
+            navigate('/menu');  
         }
     }, [isSignedIn, navigate]);
 

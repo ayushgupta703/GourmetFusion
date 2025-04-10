@@ -56,27 +56,3 @@
     text-align: right;
     color: rgb(255, 207, 188);
 }
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .chef-word {
-        text-align: center;
-        padding: 2rem 1rem;
-    }
-
-    .chef-word-container {
-        flex-direction: column;
-    }
-
-    .chef-image img {
-        max-width: 300px;
-    }
-
-    .section-title {
-        font-size: 2rem;
-    }
-
-    .chef-quote {
-        font-size: 1.2rem;
-    }
-}

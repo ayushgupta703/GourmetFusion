@@ -59,31 +59,3 @@
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(255, 255, 255, 0.626);
 }
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .info_Parent {
-        display: block;
-        padding: 0;
-    }
-
-    .info {
-        margin-top: 2rem;
-        margin-left: 25%;
-        text-align: center;
-    }
-
-    .infoMsg {
-        padding-top: 2.5rem;
-    }
-
-    .info .btn {
-        position: relative;
-        margin-top: 50px;
-    }
-
-    .info_img img {
-        height: 100%;
-        width: 100%;
-    }
-}
